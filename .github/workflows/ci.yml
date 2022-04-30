@@ -85,7 +85,7 @@ jobs:
       run: |
         git clone https://github.com/StardustXR/libstardustxr.git
         cd libstardustxr/
-        git checkout 3c13374c7f1eb68151bfca421533d31a23542ee3
+        #git checkout 3c13374c7f1eb68151bfca421533d31a23542ee3
         meson build
         ninja -C build -j2
         sudo $(which ninja) -C build -j2 install
