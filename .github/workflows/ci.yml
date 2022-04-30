@@ -46,7 +46,7 @@ jobs:
     
     - name: Install Stardust dependencies
       run: |
-        sudo apt install -y libxkbcommon-dev #mesa-common-dev libwayland-egl1 libgles2-mesa-dev libgl1-mesa-dev libglu1-mesa-dev fontconfig
+        sudo apt install -y libxkbcommon-dev libglm-dev #mesa-common-dev libwayland-egl1 libgles2-mesa-dev libgl1-mesa-dev libglu1-mesa-dev fontconfig
         sudo apt install wayland-protocols libwayland-dev libegl1-mesa-dev libgles2-mesa-dev libdrm-dev libgbm-dev libinput-dev libxkbcommon-dev libgudev-1.0-dev libpixman-1-dev libsystemd-dev libpng-dev libavutil-dev libavcodec-dev libavformat-dev # wlroots dependencies
 
     - name: Install wayland-protocols
