@@ -28,7 +28,7 @@ jobs:
       run: |
         git clone https://github.com/google/flatbuffers.git
         cd flatbuffers/
-        git checkout bf17df346e368918b2382ae3f451dc47f4c12f77
+        git checkout 750dde766990d75f849370582a0f90307c410537
         cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DFLATBUFFERS_BUILD_TESTS=OFF -DFLATBUFFERS_BUILD_FLATC=OFF -DFLATBUFFERS_BUILD_FLATHASH=OFF -DFLATBUFFERS_BUILD_SHAREDLIB=ON -DCMAKE_INSTALL_PREFIX=/usr
         make -j2
     - name: Install Flatbuffers
